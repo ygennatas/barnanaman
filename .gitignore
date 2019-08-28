@@ -1,0 +1,8 @@
+# Don't track this folder #
+node_modules/
+
+# Files #
+barnanaman.png
+config.json
+inv-link.txt
+
