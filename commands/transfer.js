@@ -1,3 +1,5 @@
+const { currency } = require('../index.js');
+
 module.exports = {
 	name: 'transfer',
 	description: 'transfer currency to another user',

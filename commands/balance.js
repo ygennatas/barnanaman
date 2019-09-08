@@ -1,3 +1,5 @@
+const { currency } = require('../index.js');
+
 module.exports = {
 	name: 'balance',
 	description: 'show user balance',

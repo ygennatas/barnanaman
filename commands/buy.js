@@ -1,3 +1,5 @@
+const { currency } = require('../index.js');
+
 module.exports = {
 	name: 'buy',
 	description: 'buy an item',

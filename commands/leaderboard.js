@@ -1,3 +1,5 @@
+const { currency } = require('../index.js');
+
 module.exports = {
 	name: 'leaderboard',
 	description: 'display the leaderboard',

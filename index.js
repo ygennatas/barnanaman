@@ -57,10 +57,12 @@ client.once('ready', () => {
 // login to Discord with your app's token
 // this event can trigger several times
 client.on('message', message => {
+    // add currency to users when they write
+    if (message.author.bot) return;
+    currency.add(message.author.id, 1);
+
     // set up command and arguments
     if (!message.content.startsWith(prefix) || message.author.bot) return;
-    // add currency to users when they write
-    currency.add(message.author.id, 1);
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
